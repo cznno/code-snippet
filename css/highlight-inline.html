@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+          .highlighter {
+          background-color: yellow; /* 荧光黄色 */
+      }
+
+      /* 您也可以选择其他颜色，例如： */
+      .highlighter-green {
+          background-color: #A8E6CF; /* 浅绿色 */
+      }
+
+      .highlighter-blue {
+          background-color: #D0E0FB; /* 浅蓝色 */
+      }
+
+      .highlighter-pink {
+          background-color: #FFD1DC; /* 浅粉色 */
+      }
+
+      .highlighter-fancy {
+          background-color: #FFFF00; /* 荧光黄色，更亮一些 */
+          padding: 0.2em 0.4em; /* 上下0.2em，左右0.4em 的内边距 */
+          border-radius: 3px; /* 轻微的圆角 */
+          box-decoration-break: clone; /* 确保多行文本时每行都有背景和圆角 */
+      }
+
+      .highlighter-gradient {
+          background-image: linear-gradient(to right, rgba(255, 255, 0, 0.5), rgba(255, 255, 0, 0.8)); /* 从半透明黄到不透明黄的渐变 */
+          padding: 0.2em 0.4em;
+          border-radius: 3px;
+          box-decoration-break: clone;
+      }
+
+      .highlighter-subtle {
+          background-image: linear-gradient(to bottom, transparent 60%, #FFD700 60%); /* 底部有颜色，模拟下划线荧光笔 */
+          padding-bottom: 0.1em; /* 稍微增加底部内边距 */
+          box-decoration-break: clone;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hi friend, try change my color!</h1>
+
+    <p>这是一段带有 <span class="highlighter">荧光笔效果</span> 的文本。</p>
+    <p>
+      您也可以使用
+      <span class="highlighter-green">不同的颜色</span> 来突出显示。
+    </p>
+    <p>
+      这是一段带有
+      <span class="highlighter-fancy">更精致的荧光笔效果</span>
+      的文本，它有内边距和圆角。
+    </p>
+    <p>
+      当文本跨越多行时，<span class="highlighter-fancy"
+        >这个效果会确保每一行都正确地显示背景和圆角，看起来更加自然，就像真正的荧光笔一样。</span
+      >
+    </p>
+
+    <p>
+      这段文本使用了
+      <span class="highlighter-gradient">渐变色的荧光笔效果</span>。
+    </p>
+    <p>
+      这是一个更
+      <span class="highlighter-subtle">微妙的荧光笔效果</span
+      >，看起来像在文本下方划线。
+    </p>
+  </body>
+</html>
